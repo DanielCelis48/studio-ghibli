@@ -1,0 +1,192 @@
+/* ===== ESTILO GENERAL ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f3f8f6; /* fondo claro con toque verdoso */
+  color: #2d3436;
+}
+
+/* ===== BARRA DE NAVEGACIÓN ===== */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem;
+  background: linear-gradient(90deg, #a8dadc, #74c69d); /* azul cielo a verde bosque */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+nav button {
+  border: none;
+  background: #1d3557;
+  color: #f1faee;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  background: #457b9d;
+  transform: scale(1.05);
+}
+
+nav button:disabled {
+  background: #b0bec5;
+  cursor: not-allowed;
+}
+
+/* ===== BUSCADOR ===== */
+.c-buscador {
+  width: 90%;
+  padding: 10px;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.c-buscador:focus {
+  border-color: #74c69d;
+  box-shadow: 0 0 4px #74c69d;
+}
+
+/* ===== BOTONES DE FILTRO (DIRECTORES) ===== */
+.directores-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.directores-container button {
+  background: #52b788;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.directores-container button:hover {
+  background: #40916c;
+  transform: scale(1.05);
+}
+
+/* ===== LISTA DE PELÍCULAS ===== */
+#la-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.2rem;
+  padding: 1.5rem;
+}
+
+.c-lista {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0.8rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.c-lista:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.c-lista img {
+  border-radius: 8px;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+/* ===== DETALLE ===== */
+.c-detalle {
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.btn-volver {
+  margin-bottom: 1rem;
+  background: #1d3557;
+  color: #f1faee;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-volver:hover {
+  background: #457b9d;
+}
+
+/* ===== PÁGINA INFORMATIVA ===== */
+.informativa {
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.informativa a {
+  color: #1d3557;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.informativa a:hover {
+  text-decoration: underline;
+}
+
+/* ===== PESTAÑA TOP RATINGS ===== */
+.top-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.2rem;
+  padding: 1.5rem;
+}
+
+.top-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.top-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.top-card img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
