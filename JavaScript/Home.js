@@ -32,7 +32,6 @@ function Home() {
   buscador.placeholder = "Buscar película...";
   buscador.addEventListener("input", () => buscadorFuncion(buscador.value));
 
-  // Filtro por director
   const directores = [...new Set(peliculas.map(p => p.director))];
   const contenedorFiltro = document.createElement("div");
   contenedorFiltro.classList.add("directores-container");

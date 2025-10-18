@@ -1,7 +1,6 @@
 function Top() {
   document.getElementById("root").innerHTML = "<h2 style='text-align:center;'>🎬 Mejores Películas de Studio Ghibli</h2>";
 
-  // Ordenamos las películas por puntuación (rt_score)
   const ordenadas = [...peliculas].sort((a, b) => b.rt_score - a.rt_score);
 
   let listaHTML = "<div id='top-lista' class='top-container'>";
